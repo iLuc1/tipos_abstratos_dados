@@ -1,7 +1,7 @@
 # Tipos Abstratos de Dados
 Estudos de aplicações referentes a tipos abstratos de dados
 
-#### Árvore
+## Árvore
 A árvore é um tipo abstrato de dados muito utilizados em sistemas de arquivos, páginas na internet, 
 árvore genalógicas, banco de dados e estruturas organizacionais.
 
@@ -18,10 +18,10 @@ O elemento do topo é conhecido como raiz e cada nó pode ser externo ou interno
 possuem filhos(são as pontas das arvores) e podem também ser chamados de folhas, já os nós internos são aqueles
 que possuem filhos.
 
-####### Ancestralidade
+#### Ancestralidade
 O ancestral de um nó é tanto ancestral do pai quanto do nó pai.
 
-####### Operações
+#### Operações
 A árvore geralmente pode possuir as seguintes funções:
 
 * Raiz: retorna a raiz da árvore(entrada: nenhum, saída: posição)
