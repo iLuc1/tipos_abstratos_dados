@@ -18,10 +18,10 @@ O elemento do topo é conhecido como raiz e cada nó pode ser externo ou interno
 possuem filhos(são as pontas das arvores) e podem também ser chamados de folhas, já os nós internos são aqueles
 que possuem filhos.
 
-#### Ancestralidade
+### Ancestralidade
 O ancestral de um nó é tanto ancestral do pai quanto do nó pai.
 
-#### Operações
+### Operações
 A árvore geralmente pode possuir as seguintes funções:
 
 * Raiz: retorna a raiz da árvore(entrada: nenhum, saída: posição)
@@ -34,3 +34,23 @@ A árvore geralmente pode possuir as seguintes funções:
 * Elementos: retorna uma lista com todos os nós(entrada: nenhum, saída: lista)
 * Atualiza elemento: retorna o elemento armazenado em v e substitui por e(entrada: posição e objeto, saída: objeto)
 * Insere: insere um elemento em uma raiz(entrada: raiz e objeto, saída: nenhuma)
+
+### Nível ou profundidade
+Sendo v um nó de uma árvore T, a profundidade de v é o número de ancestrais do mesmo. Ou seja, é o comprimento de v
+até a raiz, sendo que a raiz equivale a 0. 
+A profundidade de um nó v pode ser definida de forma recursiva, caso v for a raiz, então a profundidade é 0. Nos outros casos
+a profundidade será 1 a mais que a profundidade do pai de v.
+
+### Altura
+A altura de v é o comprimento mais longo de v até uma folha, sendo que a altura de uma folha é 0.
+Se v é um nó externo, então a altura dele será 0, caso o contrário a altura de v será o maior comprimento até chegar em uma folha.
+A altura de uma árvore é definida pela altura de uma raiz.
+
+### Percurso 
+Percorrer uma árvore significa acessar todos os nós da mesma.
+
+#### Caminho pré-fixado
+0 caminho pré-fixado é quando os nós começam a ser percorridos a partir do pai, formando uma lista onde os pais aparecem antes dos filhos.
+
+#### Caminho pós-fixado
+O oposto do pré-fixado, listando os filhos antes dos pais, sendo a raiz a última a aparecer.
